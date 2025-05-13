@@ -1,0 +1,7 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+    <h1 class="mb-4">Добро пожаловать в Medical-AI</h1>
+    <p>Это ваш интеллектуальный помощник для анализа медицинских изображений.</p>
+    <a class="btn btn-primary" href="{% url 'upload' %}">Загрузить изображение</a>
+{% endblock %}

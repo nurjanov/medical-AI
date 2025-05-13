@@ -1,0 +1,8 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+    <h2>Результат анализа</h2>
+    <img src="{{ image.image.url }}" class="img-fluid mb-3" alt="Medical Image">
+    <p>{{ image.result }}</p>
+    <a href="{% url 'upload' %}" class="btn btn-primary">Анализировать новое изображение</a>
+{% endblock %}
